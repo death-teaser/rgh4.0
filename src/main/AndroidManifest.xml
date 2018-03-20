@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.root.helpinghand">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/helping"
+        android:label="Helping Hand"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="Join Us" />
+        <activity
+            android:name=".Splash"
+            android:label="Helping Hand">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".donorprofile"
+            android:label="Donor Profile" />
+        <activity
+            android:name=".ngoprofile"
+            android:label="NGO Profile" />
+        <activity
+            android:name=".recieverman"
+            android:label="Accept Donation" />
+        <activity
+            android:name=".newdonation"
+            android:label="New Donation" />
+        <activity
+            android:name=".new_event"
+            android:label="Create Event" />
+        <activity android:name=".Events"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#110774</item>
+        <item name="colorPrimaryDark">#110774</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CodeFont"  parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">sans-serif</item></style>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.root.helpinghand.donorprofile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        app:srcCompat="@drawable/face" />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#110774"
+            android:onClick="onupload"
+            android:text="Select Image"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#110774"
+            android:onClick="onupload"
+            android:text="UPLOAD IMAGE"
+            android:textColor="#fff" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/dfab"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/fab_plus"
+        app:elevation="40dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="50dp"
+        android:onClick="onupload"/>
+</android.support.design.widget.CoordinatorLayout>
