@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<title>Demo form</title>
+	</head>
+	<body>
+		<h1>Contact us</h1>
+		<form action="/donate_accept" method="GET">
+		{% csrf_token %}
+	    	<input name="donation_reciever" type="text" placeholder="donation_reciever" value=""><br><br>
+	    	<input name="donation_mobile" type="text" placeholder="donation_mobile" value=""><br><br>
+			<input name="donation_time" type="datetime-local" value=""><br><br>
+			<input name="donation_id" type="text" placeholder="id" value=""><br><br>
+			<p><input type="submit" value="Submit"></p>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<title>Demo form</title>
+	</head>
+	<body>
+		<h1>Contact us</h1>
+		<form action="/events" method="GET">
+		{% csrf_token %}
+	    	<input name="Event_title" type="text" placeholder="Title" value=""><br><br>
+	    	<input name="Event_location" type="text" placeholder="Location" value=""><br><br>
+			<input name="Event_date" type="datetime-local" value=""><br><br>
+			<input name="Event_desc" type="text" placeholder="Description" value=""><br><br>
+			<input name="user_email" type="email" placeholder="Email" value=""><br><br>
+
+			<p><input type="submit" value="Submit"></p>
+		</form>
+	</body>
+</html>

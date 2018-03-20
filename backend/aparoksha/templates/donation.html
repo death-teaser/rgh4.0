@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<title>Demo form</title>
+	</head>
+	<body>
+		<h1>Contact us</h1>
+		<form action="/donate" method="GET">
+		{% csrf_token %}
+	    	<input name="donation_type" type="text" placeholder="Donation type" value=""><br><br>
+			<input name="donation_amount" type="text" placeholder="Amount" value=""><br><br>
+			<input name="donation_to" type="text" placeholder="to" value=""><br><br>
+			<input name="donation_description" type="text" placeholder="Description" value=""><br><br>
+			<input name="user_email" type="email" placeholder="email" value=""><br><br>
+			<p><input type="submit" value="Submit"></p>
+		</form>
+	</body>
+</html>
